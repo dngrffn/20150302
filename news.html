@@ -1,0 +1,68 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+
+<body>
+	
+	<div id="newsdiv">
+		<div id="div_preview">
+			<!--  links to National News sites-->	
+			<a name ="ExternalNewsPreview"></a>
+				<ul class="target_list" id="ul_preview" scrolling="yes">
+					<li>Hover to Preview/Click to Open</li>
+					<li>National</li>
+					<li><button id="NYT_Frontpage" onClick="window.open('http://www.nytimes.com')" target=“preview_frame”>New York Times</button>
+					<li><button id="WashPo" onClick="window.open('http://www.washingtonpost.com')" target=“preview_frame”>Washington Post</button>	
+					<li><button id="WSJ" onClick="window.open('http://www.wallstreetjournal.com')" target=“preview_frame”>Wall Street Journal</button>	
+					<li> </li>	
+					<li>Local</li>
+					<li><button id="Philly_FrontPage" onClick="window.open('http://www.philly.com')" target=“preview_frame”>Philly</button>
+					<li><button id="NJ_FrontPage" onClick="window.open('http://www.nj.com')" target=“preview_frame”>NJ</button>	
+					<li> </li>	
+					<li>International</li>
+					<li><button id="Guardian" onClick="window.open('http://www.theguardian.com')" target=“preview_frame”>Guardian</button>
+					<li><button id="Economist" onClick="window.open('http://www.economist.com')" target=“preview_frame”>Economist</button>	
+					<li>Sports</li>
+					<li><button id="Philly_sports" onClick="window.open('http://www.philly.com/philly/sports')" target=“preview_frame”>Philly Sports</button>
+					<li><button id="NYT_Sports" onClick="window.open('http://www.nytimes.com/pages/sports')" target=“preview_frame”>NYTimes Sports</button>	
+					<li><button id="NJ_Sports" onClick="window.open('http://www.nj.com/sports')" target=“preview_frame”>NJ Sports</button>	
+					<li><button id="ESPN" onClick="window.open('http://www.espn.com/sports')" target=“preview_frame”>ESPN</button>	
+					<li>Politics</li>
+					<li><button id="Politico" onClick="window.open('http://www.politico.com')" target=“preview_frame”>Politico</button>
+					<li><button id="RealClear" onClick="window.open('http://www.realclearpolitics.com')" target=“preview_frame”>Real Clear</button>	
+					<li><button id="Huffington" onClick="window.open('http://www.huffingtonpost.com')" target=“preview_frame”>Huffington Post</button>	
+					<li>General Interest</li>
+					<li><button id="NewYorker" onClick="window.open('http://www.newyorker.com')" target=“preview_frame”>New Yorker</button>
+					<li><button id="Atlantic" onClick="window.open('http://www.theatlantic.com')" target=“preview_frame”>Atlantic</button>	
+					<li><button id="DailyBeast" onClick="window.open('http://www.dailybeast.com')" target=“preview_frame”>Daily Beast</button>		
+					<li><button id="LongForm" onClick="window.open('http://www.longform.org')" target=“preview_frame”>Long Form</button>									
+				</ul>
+		</div>
+		
+
+		<div id="preview">
+			<iframe id="preview_frame" src="http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml" scrolling="yes"></iframe>
+		</div>
+
+		<div id="div_no_preview">
+			<!--  links to National News sites-->	
+			<a name ="ExternalNewsNoPreview"></a>
+				<ul class="target_list" id="ul_nopreview">
+					<li>Other LInks: </li>
+					<li><a href="http:/bloomberg.com" target=“_new”>Bloomberg</a></li>
+					<li><a href="http:/financialtimes.com" target=“_new”>Financial Times</a></li>
+					<li><a href="index.html">Home</a></li>
+				</ul>	
+		</div>	
+	</div>	
+		
+
+	<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
